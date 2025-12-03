@@ -7,7 +7,7 @@ mean(players$weight, na.rm = TRUE)
 # calculate sd weight
 sd(players$weight, na.rm = TRUE)
 
-# get columm values row 1:5 in reverse order
+# get column values row 1:5 in reverse order
 players$weight[5:1]
 
 # count number of unique weight values
