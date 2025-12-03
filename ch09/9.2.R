@@ -7,3 +7,10 @@ columns_to_keep = c("playerID", "birthYear", "birthState")
 subset(players, subset=(birthState == "NY" & birthYear == 1982),
        select=columns_to_keep)
 
+# create a tiny df for demo
+small_players = players[1:3, 1:4]
+small_players[order(small_players$birthYear), ]
+
+
+
+
