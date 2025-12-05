@@ -21,18 +21,4 @@ while (sum(d$new_sales) < 300) {
   print(paste0("s: ", floor(current_total), ", g: ", round(growth, 2)))
 }
 
-# print growth rate ended with
-growth
-
-# print what df ended with
-d
-
-# check while() results
-for(g in c(5, 10, 15)) {
-  d[, paste0("sales_", g, "pct")] = d$sales * (1+g/100)
-  if (g == 10)
-    break
-}
-
-d
 
