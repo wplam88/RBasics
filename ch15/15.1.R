@@ -22,7 +22,7 @@ players %>%
   summarise(players = n()) %>%
   arrange(desc(players))
 
-# define function with optional rows paramter, def 5 rows
+# define function with optional rows parameter, def 5 rows
 count_players = function(var, rows = 5) {
   players %>%
     group_by({{ var }}) %>%
